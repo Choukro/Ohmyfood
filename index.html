@@ -5,6 +5,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- balise <meta> "X-UA-Compatible" pour permettre de choisir la version IE dans laquelle la page doit être rendue-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- balise <meta> "viewport" pour contrôler la taille et la forme de la fenêtre d'affichage afin d'optimiser le sire pour les mobiles-->
+        <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,8 +16,41 @@
 
     <body>
         <header>
-
+            <div class="header">
+                <div class="header__icon header__icon--disable">
+                    <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+                <div class="header__image header__image--disable">
+                        <img srcset="images/logo/ohmyfood.png 1x,images/logo/ohmyfood@2x.svg 2x"
+                        src="images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood">
+                </div>
+                <div class="header__heading">
+                    <h1>Ohmyfood</h1>
+                </div>
+            </div>
         </header>
+
+        <main>
+            <section class="localization">
+                <div class="localization__form">
+                    <form id="localization__form" action="#">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="search" placeholder="Paris, Belleville">
+                    </form>
+                </div>
+                <div class="localization__heading">
+                    <h2>Réservez le menu qui vous convient</h2>
+                </div>
+                <div class="localization__byline">
+                    <h3>Réservez le menu qui vous convient</h3>
+                </div>
+                <div class="localization__button">
+                    <h3>Réservez le menu qui vous convient</h3>
+                </div>
+
+            </section>
+
+        </main>
 
     </body>
 </html>

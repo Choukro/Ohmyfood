@@ -1,13 +1,12 @@
 @import "./utils/variables";
+@import "./utils/maps";
+@import "./utils/mixins";
+@import "./utils/functions";
+@import "./base/normes";
+@import "./base/police";
+@import "./layout/header";
+@import "./pages/home";
+@import "./composants/button";
 
-body {
-    background-color:blue;
-}
 
-.header {
 
-}
-
-.header__image {
-
-}
