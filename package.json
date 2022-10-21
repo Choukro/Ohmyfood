@@ -4,8 +4,8 @@
   "description": "Dynamiser une page web avec des animations CSS",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./SASS/main.scss:CSS/style.css",
-    "prefix": "postcss ./CSS/style.css --use autoprefixer -d ./CSS/prefixed/"
+    "sass": "sass --watch ./sass/main.scss:css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
   },
   "author": "Pierre-Henri",
   "license": "ISC"
