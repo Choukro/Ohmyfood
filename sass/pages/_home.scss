@@ -1,0 +1,67 @@
+/* --------------------------*/
+/*      Localization         */
+#localization {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $colour-background-section;
+    height: 340px;
+}
+
+.localization__form {
+    background-color: $colour-background-form;
+    @include box-shadow(0px, 3px, 4px, #D0D0D0, true);
+    /*@include background-gradient(90deg,red, 10%, #000, 90%, true);*/
+}
+
+.localization__form, .localization__byline, .localization__button {
+    margin-bottom: 3em;
+}
+
+#localization__form {
+    @include flexbox(row,center,null,1em);  
+    padding: 4% 0% 4% 22%;
+    i {
+        color: $colour-background-footer;
+    }
+    input {
+        background-color: $colour-background-form;
+        border: 0px;
+        @include police(1.1,500);
+    }
+    input::placeholder {
+        color:$colour-background-footer;
+    }
+}
+
+.localization__heading, .localization__byline, .localization__button {
+    text-align: center;
+}
+
+.localization__heading {
+    padding: 0 em(50);
+}
+
+.localization__byline {
+    padding: 0 em(20);
+}
+/* --------------------------*/
+
+
+/* --------------------------*/
+/*        Operating         */
+
+#operating {
+    margin-top : 2.8em;
+    @include flexbox(column);   
+}
+
+.operating__heading {
+    padding-left: 1em;
+}
+
+.operating__list {
+    @include flexbox(row,null,center);
+}
+
+
+

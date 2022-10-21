@@ -1,3 +1,37 @@
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+    @if $inset {
+      box-shadow:inset $top $left $blur $color;
+    } @else {
+      box-shadow: $top $left $blur $color;
+    }
+}
+
+@mixin background-gradient($deg, $color1, $param1, $color2, $param2, $linear: false) {
+    @if $linear {
+      background:linear-gradient($deg, $color1 $param1, $color2 $param2);
+    } @else {
+    background:radial-gradient(circle, $color1 $param1, $color2 $param2);
+    }
+}
+
+@mixin flexbox($direction, $content:unset, $items:unset, $gap:unset) {
+    display:flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $items;
+    gap: $gap;
+}
+
+@mixin police($size:unset, $weight:unset) {
+    font-size: calc($size * 1em);
+    font-weight: $weight;
+}
+
+@mixin rounded($radius: 0.5em) {
+    border-radius: $radius;
+}
+  
+
 @mixin mobile-only {
     @media screen and (max-width: map-get($breakpoints, mobile)){
         @content;

@@ -5,9 +5,21 @@ html, body {
 
 h1 {
     font-family: 'Shrikhand', cursive;
+    @include police(2,lighter);
+    margin: 0.5em 0;
 }
 
-.bloc__heading {
+h2 {
+    @include police(1.6,700);
+    margin: 0.5em 0;
+}
+
+h3 {
+    @include police(1.2,100);
+    margin: 0.4em 0;
+}
+
+/*.bloc__heading {
 
 }
 
@@ -17,4 +29,4 @@ h1 {
 
 footer {
     
-}
+}*/

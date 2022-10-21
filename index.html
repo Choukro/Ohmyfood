@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
         <title>Ohmyfood</title>
       </head>
 
@@ -25,13 +25,13 @@
                         src="images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood">
                 </div>
                 <div class="header__heading">
-                    <h1>Ohmyfood</h1>
+                    <h1>ohmyfood</h1>
                 </div>
             </div>
         </header>
 
         <main>
-            <section class="localization">
+            <section id="localization">
                 <div class="localization__form">
                     <form id="localization__form" action="#">
                         <i class="fa-solid fa-location-dot"></i>
@@ -42,15 +42,89 @@
                     <h2>Réservez le menu qui vous convient</h2>
                 </div>
                 <div class="localization__byline">
-                    <h3>Réservez le menu qui vous convient</h3>
+                    <h3>Découvrez des restaurant d'exception, séléctionnés par nos soins.</h3>
                 </div>
                 <div class="localization__button">
-                    <h3>Réservez le menu qui vous convient</h3>
+                    <a href="#" class="button">Explorer nos restaurants</a>
                 </div>
-
             </section>
-
+            <section id="operating">
+                <div class="operating__heading">
+                    <h2>Fonctionnement</h2>
+                </div>
+                <div class="operating__list">
+                    <span>1</span>
+                    <button id="step1" name="restaurant"><i class="fa-solid fa-function fa-mobile-screen-button"></i>Choississez un restaurant</button>
+                </div>
+                <div class="operating__list">
+                    <span>2</span>
+                    <button id="step2" name="menu"><i class="fa-solid fa-function fa-list"></i>Composez votre menu</button>
+                </div>
+                <div class="operating__list">
+                    <span>3</span>
+                    <button id="step3" name="tasting"><i class="fa-solid fa-function fa-store"></i>Dégustez au restaurant</button>
+                </div>
+            </section>
+            <section id="restaurants">
+                <div class="restaurants-cards">
+                    <article class="restaurant-card">
+                        <a href="#">
+                            <div class="restaurant-card__image">
+                                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                                    alt="Restaurant La Palette du goût - Quartier Ménilmontant">
+                                    <span class="new">Nouveau</span>
+                            </div>
+                            <div class="restaurant-card__heading bloc__heading">La Palette du goût</div>
+                            <div class="restaurant-card__byline bloc__byline">Ménilmontant</div>
+                        </a>
+                    </article>
+                    <article class="restaurant-card">
+                        <a href="#">
+                            <div class="restaurant-card__image">
+                                <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                                    alt="Restaurant La note enchantée - Quartier Charonne">
+                                    <span class="new">Nouveau</span>
+                            </div>
+                            <div class="restaurant-card__heading bloc__heading">La note enchantée</div>
+                            <div class="restaurant-card__byline bloc__byline">Charonnne</div>
+                        </a>
+                    </article>
+                    <article class="restaurant-card">
+                        <a href="#">
+                            <div class="restaurant-card__image">
+                                <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                                    alt="Restaurant À la française - Quartier Cité rouge">
+                            </div>
+                            <div class="restaurant-card__heading bloc__heading">À la française</div>
+                            <div class="restaurant-card__byline bloc__byline">Cité rouge</div>
+                        </a>
+                    </article>
+                    <article class="restaurant-card">
+                        <a href="#">
+                            <div class="restaurant-card__image">
+                                <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                    alt="Restaurant Le délice des sens - Quartier Folie-Méricourt">
+                            </div>
+                            <div class="restaurant-card__heading bloc__heading">Le délice des sens</div>
+                            <div class="restaurant-card__byline bloc__byline">Folie-Méricourt</div>
+                        </a>
+                    </article>
+                </div>
+            </section>
         </main>
-
+        <footer>
+            <div class="footer__image">
+                <img srcset="images/logo/ohmyfood.png 1x,images/logo/ohmyfood@2x.svg 2x"
+                src="images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood">
+            </div>
+            <div class="footer__list">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+                    <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
+                </ul>
+            </div>
+        </footer>
     </body>
 </html>
