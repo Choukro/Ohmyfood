@@ -19,14 +19,16 @@ h3 {
     margin: em(6) 0;
 }
 
-/*.bloc__heading {
-
+.bloc__heading {
+    @include police(1.2,700);
+    color:black;
 }
 
 .bloc__byline {
-
+    @include police(1.1,100);
+    color:black;
 }
 
-footer {
+/*footer {
     
 }*/

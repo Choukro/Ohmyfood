@@ -3,8 +3,8 @@
 
     <head>
         <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- balise <meta> "X-UA-Compatible" pour permettre de choisir la version IE dans laquelle la page doit être rendue-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- balise <meta> "viewport" pour contrôler la taille et la forme de la fenêtre d'affichage afin d'optimiser le sire pour les mobiles-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -48,65 +48,100 @@
                     <a href="#" class="button">Explorer nos restaurants</a>
                 </div>
             </section>
-            <section id="operating">
-                <div class="operating__heading">
+            <section id="operating" class="section">
+                <div class="section__heading">
                     <h2>Fonctionnement</h2>
                 </div>
-                <div class="operating__list">
+                <div class="section__button">
                     <span>1</span>
                     <button id="step1" name="restaurant"><i class="fa-solid fa-function fa-mobile-screen-button"></i>Choississez un restaurant</button>
                 </div>
-                <div class="operating__list">
+                <div class="section__button">
                     <span>2</span>
                     <button id="step2" name="menu"><i class="fa-solid fa-function fa-list"></i>Composez votre menu</button>
                 </div>
-                <div class="operating__list">
+                <div class="section__button">
                     <span>3</span>
                     <button id="step3" name="tasting"><i class="fa-solid fa-function fa-store"></i>Dégustez au restaurant</button>
                 </div>
             </section>
-            <section id="restaurants">
-                <div class="restaurants-cards">
-                    <article class="restaurant-card">
+            <section id="restaurants" class="section">
+                <div class="section__heading">
+                    <h2>Restaurants</h2>
+                </div>
+                <div class="section-cards">
+                    <article class="section-card">
                         <a href="#">
-                            <div class="restaurant-card__image">
+                            <div class="section-card__image">
                                 <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                                    alt="Restaurant La Palette du goût - Quartier Ménilmontant">
-                                    <span class="new">Nouveau</span>
+                                    alt="Restaurant La palette du goût - Quartier Ménilmontant">
+                                <span>Nouveau</span>
                             </div>
-                            <div class="restaurant-card__heading bloc__heading">La Palette du goût</div>
-                            <div class="restaurant-card__byline bloc__byline">Ménilmontant</div>
+                            <div class="section-card__resume">
+                                <div class="section-card__text">
+                                    <div class="section-card__heading bloc__heading">La palette du goût</div>
+                                    <div class="section-card__byline bloc__byline">Ménilmontant</div>
+                                </div>
+                                <div class="section-card__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
                         </a>
                     </article>
-                    <article class="restaurant-card">
+                    <article class="section-card">
                         <a href="#">
-                            <div class="restaurant-card__image">
+                            <div class="section-card__image section-card__image--focus">
                                 <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
                                     alt="Restaurant La note enchantée - Quartier Charonne">
-                                    <span class="new">Nouveau</span>
+                                <span>Nouveau</span>
                             </div>
-                            <div class="restaurant-card__heading bloc__heading">La note enchantée</div>
-                            <div class="restaurant-card__byline bloc__byline">Charonnne</div>
+                            <div class="section-card__resume">
+                                <div class="section-card__text">
+                                    <div class="section-card__heading bloc__heading">La note enchantée</div>
+                                    <div class="section-card__byline bloc__byline">Charonnne</div>
+                                </div>
+                                <div class="section-card__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
                         </a>
                     </article>
-                    <article class="restaurant-card">
+                    <article class="section-card">
                         <a href="#">
-                            <div class="restaurant-card__image">
+                            <div class="section-card__image">
                                 <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                                     alt="Restaurant À la française - Quartier Cité rouge">
                             </div>
-                            <div class="restaurant-card__heading bloc__heading">À la française</div>
-                            <div class="restaurant-card__byline bloc__byline">Cité rouge</div>
+                            <div class="section-card__resume">
+                                <div class="section-card__text">
+                                    <div class="section-card__heading bloc__heading">À la française</div>
+                                    <div class="section-card__byline bloc__byline">Cité rouge</div>
+                                </div>
+                                <div class="section-card__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
                         </a>
                     </article>
-                    <article class="restaurant-card">
+                    <article class="section-card">
                         <a href="#">
-                            <div class="restaurant-card__image">
+                            <div class="section-card__image">
                                 <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                                     alt="Restaurant Le délice des sens - Quartier Folie-Méricourt">
                             </div>
-                            <div class="restaurant-card__heading bloc__heading">Le délice des sens</div>
-                            <div class="restaurant-card__byline bloc__byline">Folie-Méricourt</div>
+                            <div class="section-card__resume">
+                                <div class="section-card__text">
+                                    <div class="section-card__heading bloc__heading">Le délice des sens</div>
+                                    <div class="section-card__byline bloc__byline">Folie-Méricourt</div>
+                                </div>
+                                <div class="section-card__icon">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
                         </a>
                     </article>
                 </div>
@@ -114,8 +149,9 @@
         </main>
         <footer>
             <div class="footer__image">
+                <!-- 
                 <img srcset="images/logo/ohmyfood.png 1x,images/logo/ohmyfood@2x.svg 2x"
-                src="images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood">
+                src="images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood">-->
             </div>
             <div class="footer__list">
                 <ul>

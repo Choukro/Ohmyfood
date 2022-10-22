@@ -1,8 +1,6 @@
 /* --------------------------*/
 /*      Localization         */
 #localization {
-    margin-left: auto;
-    margin-right: auto;
     background-color: $colour-background-section;
     height: 340px;
 }
@@ -14,18 +12,21 @@
 }
 
 .localization__form, .localization__byline, .localization__button {
-    margin-bottom: em(45);
+    margin-bottom: em(35);
 }
 
 #localization__form {
-    @include flexbox(row,center,null,1em);  
-    padding: 4% 0% 4% 22%;
+    @include flexbox(row,center,null,null);  
+    padding: 4% 0% 4% 0%;
     i {
+        width: em(45);
         color: $colour-background-footer;
+        text-align: center;
     }
     input {
         background-color: $colour-background-form;
         border: 0px;
+        width: em(135);
         @include police(1.1,500);
     }
     input::placeholder {
@@ -48,23 +49,27 @@
 
 
 /* --------------------------*/
-/*        Operating         */
-
-#operating {
-    margin-top : em(40);
-    margin-bottom : em(70);
+/* Operating et restaurants   */
+.section {
+    padding-top : em(40);
+    padding-bottom : em(70);
     @include flexbox(column,null,null,1.5em);   
 }
 
-.operating__heading {
+.section__heading {
     padding-left: em(15);
 }
+/* --------------------------*/
 
+
+/* --------------------------*/
+/*        Operating         */
 #step1 i {
     font-size : em(20)!important;
 }
 
-.operating__list {
+
+.section__button {
     @include flexbox(row,center,center);
     margin-right: em(5);
     span {
@@ -96,6 +101,80 @@
             }
         &:hover > i {
             color: $colour-primary;
+        }
+    }
+}
+/* --------------------------*/
+
+
+/* --------------------------*/
+/*       Restaurants        */
+#restaurants {
+    background-color: $colour-background-section;
+}
+
+.section-cards {
+    @include flexbox(column,null,center,em(18));
+
+}
+
+.section-card {
+    height:250px;
+    width:335px;
+    @include flexbox (column);
+    @include rounded (em(15));
+    @include box-shadow(0px, 6px, 12px, rgba(0, 0, 0, 0.2));
+}
+
+.section-card__image {
+    img {
+        height : 170px;
+        width : 100%;
+        object-fit: cover;
+        object-position: right bottom;
+        @include rounded (em(15) em(15) 0px 0px);
+    }
+    span {
+        position:absolute;
+        z-index: 1;
+        margin-left: em(-97);
+        margin-top: em(15);
+        text-align: center;
+        background-color: $colour-background-new;
+        @include police (0.9,500);
+        @include rounded (em(2));
+        padding: em(6) em(10);
+        color:$colour-police-new;
+    }
+    &--focus img {
+        object-position: 50% 60%!important;
+    }
+}
+
+.section-card__resume {
+    @include flexbox (row, space-between,center);
+    margin-right : em(20);
+    margin-left : em(10);
+    margin-top : em(12);
+}
+
+.section-card__text {
+    @include flexbox (column,null,null,em(5));
+}
+
+.section-card__icon {
+    i {
+        font-size: em(25);
+    }
+    &:hover {
+        i {
+            background: linear-gradient(#9356DC, #FF79DA);
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            opacity: 1;
+            transition: opacity 1s;
         }
     }
 }
