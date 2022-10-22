@@ -1,0 +1,24 @@
+.footer {
+    padding : em(30) 0 em(20) em(20);
+    @include flexbox(column,center, null,em(20));
+    background-color: $colour-background-footer;
+    &__heading {
+        @extend %h1;
+        @include police(1.2,lighter);
+        color : $colour-background;
+    }
+    &__list {
+        ul > li {
+            display:block;
+            padding-bottom : em(10);
+        }
+        ul > li > a {
+            color : $colour-background;
+            @include police(1.05,500);
+        }
+        ul > li > a > i {
+            font-size : em(13);
+            padding-right : em(10);
+        }
+    }
+}

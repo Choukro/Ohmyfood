@@ -3,8 +3,12 @@ html, body {
     font-size : $base-font-size;
 }
 
-h1 {
+%h1 {
     font-family: 'Shrikhand', cursive;
+}
+
+h1 {
+    @extend %h1;
     @include police(2,lighter);
     margin: em(8) 0;
 }

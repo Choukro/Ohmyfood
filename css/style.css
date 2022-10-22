@@ -28,13 +28,21 @@ i {
   font-size: 1.1333333333em;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 html, body {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
 }
 
-h1 {
+.footer__heading, h1 {
   font-family: "Shrikhand", cursive;
+}
+
+h1 {
   font-size: 2em;
   font-weight: lighter;
   margin: 0.5333333333em 0;
@@ -73,15 +81,12 @@ h3 {
   align-items: center;
   gap: unset;
 }
-
 .header__icon--disable {
   display: none;
 }
-
 .header__image--disable {
   display: none;
 }
-
 .header__heading {
   margin-right: auto;
   margin-left: auto;
@@ -90,21 +95,57 @@ h3 {
   display: none;
 }
 
+.footer {
+  padding: 2em 0 1.3333333333em 1.3333333333em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.3333333333em;
+  background-color: #383838;
+}
+.footer__heading {
+  font-size: 1.2em;
+  font-weight: lighter;
+  color: white;
+}
+.footer__list ul > li {
+  display: block;
+  padding-bottom: 0.6666666667em;
+}
+.footer__list ul > li > a {
+  color: white;
+  font-size: 1.05em;
+  font-weight: 500;
+}
+.footer__list ul > li > a > i {
+  font-size: 0.8666666667em;
+  padding-right: 0.6666666667em;
+}
+
 /* --------------------------*/
 /*      Localization         */
-#localization {
+.localization {
   background-color: #f6f6f6;
   height: 340px;
 }
-
 .localization__form {
+  margin-bottom: 2.3333333333em;
   background-color: #e9e9e9;
   box-shadow: inset 0px 3px 4px #D0D0D0;
   /*@include background-gradient(90deg,red, 10%, #000, 90%, true);*/
 }
-
-.localization__form, .localization__byline, .localization__button {
+.localization__heading {
+  text-align: center;
+  padding: 0 3.3333333333em;
+}
+.localization__byline {
   margin-bottom: 2.3333333333em;
+  text-align: center;
+  padding: 0 1.3333333333em;
+}
+.localization__button {
+  margin-bottom: 2.3333333333em;
+  text-align: center;
 }
 
 #localization__form {
@@ -129,21 +170,17 @@ h3 {
   color: #383838;
 }
 
-.localization__heading, .localization__byline, .localization__button {
-  text-align: center;
-}
-
-.localization__heading {
-  padding: 0 3.3333333333em;
-}
-
-.localization__byline {
-  padding: 0 1.3333333333em;
-}
-
 /* --------------------------*/
 /* --------------------------*/
 /* Operating et restaurants   */
+#step1 i {
+  font-size: 1.3333333333em !important;
+}
+
+#restaurants {
+  background-color: #f6f6f6;
+}
+
 .section {
   padding-top: 2.6666666667em;
   padding-bottom: 4.6666666667em;
@@ -151,18 +188,9 @@ h3 {
   flex-direction: column;
   gap: 1.5em;
 }
-
 .section__heading {
   padding-left: 1em;
 }
-
-/* --------------------------*/
-/* --------------------------*/
-/*        Operating         */
-#step1 i {
-  font-size: 1.3333333333em !important;
-}
-
 .section__button {
   display: flex;
   flex-direction: row;
@@ -207,21 +235,12 @@ h3 {
 .section__button button:hover > i {
   color: #9356DC;
 }
-
-/* --------------------------*/
-/* --------------------------*/
-/*       Restaurants        */
-#restaurants {
-  background-color: #f6f6f6;
-}
-
 .section-cards {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.2em;
 }
-
 .section-card {
   height: 250px;
   width: 335px;
@@ -233,7 +252,6 @@ h3 {
   border-radius: 1em;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
-
 .section-card__image img {
   height: 170px;
   width: 100%;
@@ -257,7 +275,6 @@ h3 {
 .section-card__image--focus img {
   object-position: 50% 60% !important;
 }
-
 .section-card__resume {
   display: flex;
   flex-direction: row;
@@ -268,13 +285,11 @@ h3 {
   margin-left: 0.6666666667em;
   margin-top: 0.8em;
 }
-
 .section-card__text {
   display: flex;
   flex-direction: column;
   gap: 0.3333333333em;
 }
-
 .section-card__icon i {
   font-size: 1.6666666667em;
 }

@@ -1,18 +1,27 @@
 /* --------------------------*/
 /*      Localization         */
-#localization {
+.localization {
     background-color: $colour-background-section;
     height: 340px;
-}
-
-.localization__form {
-    background-color: $colour-background-form;
-    @include box-shadow(0px, 3px, 4px, #D0D0D0, true);
-    /*@include background-gradient(90deg,red, 10%, #000, 90%, true);*/
-}
-
-.localization__form, .localization__byline, .localization__button {
-    margin-bottom: em(35);
+    &__form {
+        margin-bottom: em(35);
+        background-color: $colour-background-form;
+        @include box-shadow(0px, 3px, 4px, #D0D0D0, true);
+        /*@include background-gradient(90deg,red, 10%, #000, 90%, true);*/
+    }
+    &__heading {
+        text-align: center;
+        padding: 0 em(50);
+    }
+    &__byline {
+        margin-bottom: em(35);
+        text-align: center;
+        padding: 0 em(20);
+    }
+    &__button {
+        margin-bottom: em(35);
+        text-align: center;
+    }
 }
 
 #localization__form {
@@ -33,151 +42,119 @@
         color:$colour-background-footer;
     }
 }
-
-.localization__heading, .localization__byline, .localization__button {
-    text-align: center;
-}
-
-.localization__heading {
-    padding: 0 em(50);
-}
-
-.localization__byline {
-    padding: 0 em(20);
-}
 /* --------------------------*/
 
 
 /* --------------------------*/
 /* Operating et restaurants   */
-.section {
-    padding-top : em(40);
-    padding-bottom : em(70);
-    @include flexbox(column,null,null,1.5em);   
-}
 
-.section__heading {
-    padding-left: em(15);
-}
-/* --------------------------*/
-
-
-/* --------------------------*/
-/*        Operating         */
 #step1 i {
     font-size : em(20)!important;
 }
 
-
-.section__button {
-    @include flexbox(row,center,center);
-    margin-right: em(5);
-    span {
-        z-index: 1;
-        width:em(22);
-        height:em(22);
-        text-align: center;
-        background-color: $colour-primary;
-        @include rounded(em(50));
-        @include police (1,400);
-        line-height: em(22);
-        color:$colour-background;
-    }
-    button > i {
-        color: $colour-icon;
-    }
-    button {
-        width:310px;
-        margin-left: em(-10);
-        @include flexbox(row,null,center,1.5em);
-        background-color: $colour-background-section;
-        @include border(0px);
-        @include rounded(1em);
-        padding : em(25) em(30);
-        @include police (1.05,500);
-        @include box-shadow(0px, 6px, 12px, rgba(0, 0, 0, 0.2));
-        &:hover {
-            background-color: $colour-button-hover!important;
-            }
-        &:hover > i {
-            color: $colour-primary;
-        }
-    }
-}
-/* --------------------------*/
-
-
-/* --------------------------*/
-/*       Restaurants        */
 #restaurants {
     background-color: $colour-background-section;
 }
 
-.section-cards {
-    @include flexbox(column,null,center,em(18));
-
-}
-
-.section-card {
-    height:250px;
-    width:335px;
-    @include flexbox (column);
-    @include rounded (em(15));
-    @include box-shadow(0px, 6px, 12px, rgba(0, 0, 0, 0.2));
-}
-
-.section-card__image {
-    img {
-        height : 170px;
-        width : 100%;
-        object-fit: cover;
-        object-position: right bottom;
-        @include rounded (em(15) em(15) 0px 0px);
+.section {
+    padding-top : em(40);
+    padding-bottom : em(70);
+    @include flexbox(column,null,null,1.5em);  
+    &__heading {
+        padding-left: em(15);
     }
-    span {
-        position:absolute;
-        z-index: 1;
-        margin-left: em(-97);
-        margin-top: em(15);
-        text-align: center;
-        background-color: $colour-background-new;
-        @include police (0.9,500);
-        @include rounded (em(2));
-        padding: em(6) em(10);
-        color:$colour-police-new;
+    &__button {
+        @include flexbox(row,center,center);
+        margin-right: em(5);
+        span {
+            z-index: 1;
+            width:em(22);
+            height:em(22);
+            text-align: center;
+            background-color: $colour-primary;
+            @include rounded(em(50));
+            @include police (1,400);
+            line-height: em(22);
+            color:$colour-background;
+        }
+        button > i {
+            color: $colour-icon;
+        }
+        button {
+            width:310px;
+            margin-left: em(-10);
+            @include flexbox(row,null,center,1.5em);
+            background-color: $colour-background-section;
+            @include border(0px);
+            @include rounded(1em);
+            padding : em(25) em(30);
+            @include police (1.05,500);
+            @include box-shadow(0px, 6px, 12px, rgba(0, 0, 0, 0.2));
+            &:hover {
+                background-color: $colour-button-hover!important;
+                }
+            &:hover > i {
+                color: $colour-primary;
+            }
+        }
+    } 
+    &-cards {
+        @include flexbox(column,null,center,em(18));
     }
-    &--focus img {
-        object-position: 50% 60%!important;
+    &-card {
+        height:250px;
+        width:335px;
+        @include flexbox (column);
+        @include rounded (em(15));
+        @include box-shadow(0px, 6px, 12px, rgba(0, 0, 0, 0.2));
     }
-}
-
-.section-card__resume {
-    @include flexbox (row, space-between,center);
-    margin-right : em(20);
-    margin-left : em(10);
-    margin-top : em(12);
-}
-
-.section-card__text {
-    @include flexbox (column,null,null,em(5));
-}
-
-.section-card__icon {
-    i {
-        font-size: em(25);
+    &-card__image {
+        img {
+            height : 170px;
+            width : 100%;
+            object-fit: cover;
+            object-position: right bottom;
+            @include rounded (em(15) em(15) 0px 0px);
+        }
+        span {
+            position:absolute;
+            z-index: 1;
+            margin-left: em(-97);
+            margin-top: em(15);
+            text-align: center;
+            background-color: $colour-background-new;
+            @include police (0.9,500);
+            @include rounded (em(2));
+            padding: em(6) em(10);
+            color:$colour-police-new;
+        }
+        &--focus img {
+            object-position: 50% 60%!important;
+        }
     }
-    &:hover {
+    &-card__resume {
+        @include flexbox (row,space-between,center);
+        margin-right : em(20);
+        margin-left : em(10);
+        margin-top : em(12);
+    }
+    &-card__text {
+        @include flexbox (column,null,null,em(5));
+    }
+    &-card__icon {
         i {
-            background: linear-gradient(#9356DC, #FF79DA);
-            color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            opacity: 1;
-            transition: opacity 1s;
+            font-size: em(25);
+        }
+        &:hover {
+            i {
+                background: linear-gradient(#9356DC, #FF79DA);
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                opacity: 1;
+                transition: opacity 1s;
+            }
         }
     }
 }
-
-
-

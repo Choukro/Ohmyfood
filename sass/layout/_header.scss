@@ -1,25 +1,21 @@
 .header {
     @include flexbox(row,null,center);
-}
-
-.header__icon {
-    &--disable {
-        display:none;
+    &__icon {
+        &--disable {
+            display:none;
+        }
     }
-    
-}
-
-.header__image {
-    &--disable {
-        display:none;
+    &__image {
+        &--disable {
+            display:none;
+        }
+        
     }
-    
-}
-
-.header__heading {
-    margin-right:auto;
-    margin-left: auto;
-    &--disable {
-        display:none;
+    &__heading {
+        margin-right:auto;
+        margin-left: auto;
+        &--disable {
+            display:none;
+        }
     }
 }
