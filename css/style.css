@@ -25,7 +25,7 @@ a {
 }
 
 i {
-  font-size: 1.1em;
+  font-size: 1.1333333333em;
 }
 
 html, body {
@@ -37,13 +37,13 @@ h1 {
   font-family: "Shrikhand", cursive;
   font-size: 2em;
   font-weight: lighter;
-  margin: 0.5em 0;
+  margin: 0.5333333333em 0;
 }
 
 h2 {
   font-size: 1.6em;
   font-weight: 700;
-  margin: 0.5em 0;
+  margin: 0.5333333333em 0;
 }
 
 h3 {
@@ -67,6 +67,7 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: unset;
 }
 
 .header__icon--disable {
@@ -140,31 +141,71 @@ footer {
 /* --------------------------*/
 /*        Operating         */
 #operating {
-  margin-top: 2.8em;
+  margin-top: 2.6666666667em;
+  margin-bottom: 4.6666666667em;
   display: flex;
   flex-direction: column;
-  justify-content: unset;
-  align-items: unset;
-  gap: unset;
+  gap: 1.5em;
 }
 
 .operating__heading {
   padding-left: 1em;
 }
 
+#step1 i {
+  font-size: 1.3333333333em !important;
+}
+
 .operating__list {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   gap: unset;
+  margin-right: 0.3333333333em;
+}
+.operating__list span {
+  z-index: 1;
+  width: 1.4666666667em;
+  height: 1.4666666667em;
+  text-align: center;
+  background-color: #9356DC;
+  border-radius: 3.3333333333em;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.4666666667em;
+  color: white;
+}
+.operating__list button > i {
+  color: #7d7d7d;
+}
+.operating__list button {
+  width: 310px;
+  margin-left: -0.6666666667em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5em;
+  background-color: #f6f6f6;
+  border: 0px none #f6f6f6;
+  border-radius: 1em;
+  padding: 1.6666666667em 2em;
+  font-size: 1.05em;
+  font-weight: 500;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+.operating__list button:hover {
+  background-color: #f5ecfe !important;
+}
+.operating__list button:hover > i {
+  color: #9356DC;
 }
 
 .button {
   padding: 0.9333333333em 1.2666666667em;
-  border-radius: 3px;
   color: white;
-  font-weight: 500;
   font-size: 1.1em;
+  font-weight: 500;
   background: linear-gradient(-10deg, #9356DC 0%, #FF79DA 100%);
   border-radius: 2em;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);

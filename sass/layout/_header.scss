@@ -1,7 +1,5 @@
 .header {
-    display:flex;
-    flex-direction: row;
-    align-items: center;
+    @include flexbox(row,null,center);
 }
 
 .header__icon {

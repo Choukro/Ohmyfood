@@ -14,7 +14,7 @@
 }
 
 .localization__form, .localization__byline, .localization__button {
-    margin-bottom: 3em;
+    margin-bottom: em(45);
 }
 
 #localization__form {
@@ -51,16 +51,53 @@
 /*        Operating         */
 
 #operating {
-    margin-top : 2.8em;
-    @include flexbox(column);   
+    margin-top : em(40);
+    margin-bottom : em(70);
+    @include flexbox(column,null,null,1.5em);   
 }
 
 .operating__heading {
-    padding-left: 1em;
+    padding-left: em(15);
+}
+
+#step1 i {
+    font-size : em(20)!important;
 }
 
 .operating__list {
-    @include flexbox(row,null,center);
+    @include flexbox(row,center,center);
+    margin-right: em(5);
+    span {
+        z-index: 1;
+        width:em(22);
+        height:em(22);
+        text-align: center;
+        background-color: $colour-primary;
+        @include rounded(em(50));
+        @include police (1,400);
+        line-height: em(22);
+        color:$colour-background;
+    }
+    button > i {
+        color: $colour-icon;
+    }
+    button {
+        width:310px;
+        margin-left: em(-10);
+        @include flexbox(row,null,center,1.5em);
+        background-color: $colour-background-section;
+        @include border(0px);
+        @include rounded(1em);
+        padding : em(25) em(30);
+        @include police (1.05,500);
+        @include box-shadow(0px, 6px, 12px, rgba(0, 0, 0, 0.2));
+        &:hover {
+            background-color: $colour-button-hover!important;
+            }
+        &:hover > i {
+            color: $colour-primary;
+        }
+    }
 }
 
 

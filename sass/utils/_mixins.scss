@@ -30,7 +30,10 @@
 @mixin rounded($radius: 0.5em) {
     border-radius: $radius;
 }
-  
+
+@mixin border($width:unset, $style:none, $color:$colour-background-section) {
+    border : $width $style $color;
+}
 
 @mixin mobile-only {
     @media screen and (max-width: map-get($breakpoints, mobile)){
