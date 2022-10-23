@@ -10,17 +10,17 @@ main {
     }
 }
 
-.section-title {
+#menu-restaurant {
     z-index: 1;
     position:relative;
-    padding-top:em(20);
-    @include flexbox(row, center, center, em(30));
-    @include rounded(em(46) em(46) 0 0);
-    background-color: $colour-background-section;
     margin-top:em(-25);
-    margin-left: -2.5%;
-    overflow: hidden;
-    width:105%;
+    background-color: $colour-background-section;
+    @include rounded(em(26) em(26) 0 0); 
+}
+
+.section-title {
+    padding:em(20) em(15) 0 em(15);
+    @include flexbox(row, space-between, center, em(30));
     &__heading {
         @include police (0.9,lighter);
     }

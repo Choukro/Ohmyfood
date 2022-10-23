@@ -48,13 +48,6 @@ html {
 /* Sections
    ========================================================================== */
 /**
- * Remove the margin in all browsers.
- */
-body {
-  margin: 0;
-}
-
-/**
  * Render the `main` element consistently in IE.
  */
 main {
@@ -646,21 +639,21 @@ main {
   object-fit: cover;
 }
 
-.section-title {
+#menu-restaurant {
   z-index: 1;
   position: relative;
-  padding-top: 1.3333333333em;
+  margin-top: -1.6666666667em;
+  background-color: #f6f6f6;
+  border-radius: 1.7333333333em 1.7333333333em 0 0;
+}
+
+.section-title {
+  padding: 1.3333333333em 1em 0 1em;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 2em;
-  border-radius: 3.0666666667em 3.0666666667em 0 0;
-  background-color: #f6f6f6;
-  margin-top: -1.6666666667em;
-  margin-left: -2.5%;
-  overflow: hidden;
-  width: 105%;
 }
 .section-title__heading {
   font-size: 0.9em;

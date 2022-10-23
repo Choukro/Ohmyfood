@@ -5,9 +5,9 @@
 body {
 	background-color: $colour-background;
 	height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width:1400px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:1400px;
     @include tablet-only {
         max-width:1024px;
     }
@@ -46,14 +46,6 @@ ul {
   
   /* Sections
      ========================================================================== */
-  
-  /**
-   * Remove the margin in all browsers.
-   */
-  
-  body {
-    margin: 0;
-  }
   
   /**
    * Render the `main` element consistently in IE.
