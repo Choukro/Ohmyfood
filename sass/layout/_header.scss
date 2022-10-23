@@ -1,15 +1,25 @@
 .header {
     @include flexbox(row,null,center);
     &__icon {
+        width:50%;
+        padding-left:em(15);
         &--disable {
             display:none;
+        }
+        i {
+            font-size: em(20);
+            color:black;
         }
     }
     &__image {
+        width:50%;
+        margin: em(16) 0 em(16) calc(-164px/2);
         &--disable {
             display:none;
         }
-        
+        img {
+            width: 164px;
+        }
     }
     &__heading {
         margin-right:auto;

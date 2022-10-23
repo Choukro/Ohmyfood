@@ -1,0 +1,75 @@
+main {
+    background-color: $colour-background-section;
+}
+
+#image-restaurant {
+    max-height : 500px;
+    img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+}
+
+.section-title {
+    z-index: 1;
+    position:relative;
+    padding-top:em(20);
+    @include flexbox(row, center, center, em(30));
+    @include rounded(em(46) em(46) 0 0);
+    background-color: $colour-background-section;
+    margin-top:em(-25);
+    margin-left: -2.5%;
+    overflow: hidden;
+    width:105%;
+    &__heading {
+        @include police (0.9,lighter);
+    }
+}
+
+.section-menu {
+    @include flexbox(column,null,null,em(16));
+    padding-top: em(20);
+    padding-bottom: em(40);
+    &__heading {
+        padding-left:em(15);
+    }
+    &__heading::after {
+        @include separator();
+    }
+    &-plat {
+        @include flexbox(row,null,center);
+        @include box-shadow(0px, 6px, 12px, rgba(0, 0, 0, 0.2));
+        background-color: $colour-background;
+        @include rounded (em(15));
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        overflow: hidden;
+        &-text {
+            @include flexbox(column,null,null,em(5));
+            width:100%;
+            padding: em(11) em(15);
+            &__byline {
+                @include flexbox(row, space-between,center);
+            }
+            &__byline > div {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+        &__icon {
+            &--disable {
+                display: none;
+            }
+        }
+    }
+    &__button {
+        padding-bottom: em(35) ;
+        margin-left: auto;
+        margin-right: auto;
+        & a {
+            padding-left: em(45);
+            padding-right: em(45);
+        }
+    }
+}

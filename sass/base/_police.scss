@@ -23,6 +23,12 @@ h3 {
     margin: em(6) 0;
 }
 
+h4 {
+    @include police(1.05,100);
+    margin:0;
+    text-transform: uppercase;
+}
+
 .bloc__heading {
     @include police(1.2,700);
     color:black;

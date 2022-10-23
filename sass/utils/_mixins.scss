@@ -35,6 +35,14 @@
     border : $width $style $color;
 }
 
+@mixin separator($color:$colour-tertiary) {
+    content: "";
+    display: block;
+    width : 3em;
+    padding-top: em(3);
+    border-bottom: em(3) solid $color;
+}
+
 @mixin mobile-only {
     @media screen and (max-width: map-get($breakpoints, mobile)){
         @content;
