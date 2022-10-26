@@ -8,5 +8,21 @@
 }
 
 .button {
-    @extend %button; 
+    @extend %button;
+    position: relative;
+    z-index: 1;
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+    /*&::after {
+        @include pseudo-elem;
+        @extend %button;
+        filter: brightness(200%);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+    }*/
 }
+

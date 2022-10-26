@@ -1,16 +1,16 @@
 @mixin box-shadow($top, $left, $blur, $color, $inset: false) {
     @if $inset {
-      box-shadow:inset $top $left $blur $color;
+        box-shadow:inset $top $left $blur $color;
     } @else {
-      box-shadow: $top $left $blur $color;
+        box-shadow: $top $left $blur $color;
     }
 }
 
 @mixin background-gradient($deg, $color1, $param1, $color2, $param2, $linear: false) {
     @if $linear {
-      background:linear-gradient($deg, $color1 $param1, $color2 $param2);
+        background:linear-gradient($deg, $color1 $param1, $color2 $param2);
     } @else {
-    background:radial-gradient(circle, $color1 $param1, $color2 $param2);
+        background:radial-gradient(circle, $color1 $param1, $color2 $param2);
     }
 }
 
@@ -41,6 +41,15 @@
     width : 3em;
     padding-top: em(3);
     border-bottom: em(3) solid $color;
+}
+
+@mixin pseudo-elem {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 @mixin mobile-only {
