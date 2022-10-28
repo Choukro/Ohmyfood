@@ -147,8 +147,10 @@
     &-card__icon {
         i {
             font-size: em(25);
+            color: black;
+
         }
-        &:hover {
+        /*&:hover {
             i {
                 background: linear-gradient(#9356DC, #FF79DA);
                 color: transparent;
@@ -157,6 +159,17 @@
                 color: transparent;
                 opacity: 1;
                 transition: opacity 1s;
+            }
+        }*/
+        .fa-solid {
+            display: none!important;
+        }
+        &:hover {
+            .fa-regular {
+                display: none!important;
+            }
+            .fa-solid {
+                display:inline-block!important;
             }
         }
     }
