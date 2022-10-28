@@ -26,26 +26,3 @@
         transition: opacity 250ms;
     }*/
 }
-
-.fa-solid.fa-heart {
-    color: transparent;
-    background-image: linear-gradient($colour-primary, $colour-secondary);
-    -webkit-background-clip: text;
-    background-clip: text;
-    opacity: 0;
-    &:hover {
-            opacity:1;
-            transition: opacity 0.7s ease-in-out;
-        }
-}
-    /*&::after {
-        @include pseudo-elem;
-        content: "\f004";
-        background-image: linear-gradient($colour-primary, $colour-secondary);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        opacity: 0;
-        z-index: -1;
-        transition: opacity 0.5s ease-in-out;
-    }*/
