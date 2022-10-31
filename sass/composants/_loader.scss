@@ -28,7 +28,10 @@
         opacity:0;
         margin-top:em(-25);
         @extend %h1;
-        @include police(3.2,600);
+        @include police(4,600);
+        @include mobile-only {
+            @include police(2.5,600);
+        }
         display: inline-block;
         letter-spacing: em(2);
         color: black;
@@ -56,10 +59,9 @@
     }
     100% {
         opacity: 0;
-        transform: scale(4);
+        transform: scale(6);
         }
     }
-
 
 @keyframes heading {
     0% , 20% {
@@ -68,9 +70,35 @@
     }
     65% , 95% {
         opacity: 1;
-        letter-spacing: em(2);
+        letter-spacing: em(1);
     }
     95% , 100% {
         opacity: 0;
     }
-  }
+}
+
+@include mobile-only {
+    @keyframes icon{
+        0% {
+            opacity: 1;
+            transform: scale(0);
+        }
+        100% {
+            opacity: 0;
+            transform: scale(4);
+            }
+        }
+    @keyframes heading {
+        0% , 20% {
+            opacity: 0;
+            letter-spacing: em(10);
+        }
+        65% , 95% {
+            opacity: 1;
+            letter-spacing: em(1);
+        }
+        95% , 100% {
+            opacity: 0;
+        }
+    }
+}

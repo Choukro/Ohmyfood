@@ -4,7 +4,10 @@
     background-color: $colour-background-section;
     height: 340px;
     &__form {
-        margin-bottom: em(35);
+        margin-bottom: em(55);
+        @include mobile-only {
+            margin-bottom: em(35);
+        }
         background-color: $colour-background-form;
         @include box-shadow(em(0), em(3), em(4), #D0D0D0, true);
         /*@include background-gradient(90deg,red, 10%, #000, 90%, true);*/
@@ -14,7 +17,10 @@
         padding: 0 em(50);
     }
     &__byline {
-        margin-bottom: em(35);
+        margin-bottom: em(65);
+        @include mobile-only {
+            margin-bottom: em(45);
+        }
         text-align: center;
         padding: 0 em(20);
     }
@@ -62,9 +68,13 @@
 .section {
     padding-top : em(40);
     padding-bottom : em(70);
-    @include flexbox(column,null,null,1.5em);  
+    @include flexbox(column,null,null,1.5em);
     &__heading {
         padding-left: em(15);
+        text-align: center;
+        @include mobile-only {
+            text-align: left;
+        }
     }
     &__button {
         @include flexbox(row,center,center);
