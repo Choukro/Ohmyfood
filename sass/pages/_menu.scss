@@ -24,6 +24,9 @@ main {
     &__heading {
         @include police (0.9,lighter);
     }
+    &__icon {
+        cursor: pointer;
+    }
 }
 
 .section-menu {
@@ -44,6 +47,12 @@ main {
         margin-left: 2.5%;
         margin-right: 2.5%;
         overflow: hidden;
+        animation: menu $anim-duration both ease-in-out;
+        @for $i from 1 through $num-menu {
+            &--#{$i} {
+                animation-delay : $anim-delay * $i;
+            }
+        }
         &-text {
             @include flexbox(column,null,null,em(5));
             width:100%;
@@ -57,11 +66,20 @@ main {
                 overflow: hidden;
             }
         }
-        &__icon {
+        &__choice {
+            background-color: $colour-tertiary;
+            /*margin: -1em -5em -1em 1em;*/
+            width: 4em;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            transition-duration: 0.5s;
+        }
+        /*&__icon {
             &--disable {
                 display: none;
             }
-        }
+        }*/
     }
     &__button {
         padding-bottom: em(35) ;

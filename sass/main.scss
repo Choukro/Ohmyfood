@@ -1,7 +1,9 @@
+@use "sass:math";
 @import "./utils/variables";
 @import "./utils/maps";
 @import "./utils/mixins";
 @import "./utils/functions";
+@import "./utils/animations";
 @import "./base/normes";
 @import "./base/police";
 @import "./layout/header";

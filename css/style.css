@@ -1,3 +1,15 @@
+/* ----------  */
+/* animations */
+@keyframes menu {
+  0% {
+    transform: translatey(1.3333333333em);
+    opacity: 0%;
+  }
+  100% {
+    transform: translatey(0em);
+    opacity: 100%;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -676,6 +688,9 @@ main {
   font-size: 0.9em;
   font-weight: lighter;
 }
+.section-title__icon {
+  cursor: pointer;
+}
 
 .section-menu {
   display: flex;
@@ -705,6 +720,39 @@ main {
   margin-left: 2.5%;
   margin-right: 2.5%;
   overflow: hidden;
+  animation: menu 1000ms both ease-in-out;
+  /*&__icon {
+      &--disable {
+          display: none;
+      }
+  }*/
+}
+.section-menu-plat--1 {
+  animation-delay: 333.3333333333ms;
+}
+.section-menu-plat--2 {
+  animation-delay: 666.6666666667ms;
+}
+.section-menu-plat--3 {
+  animation-delay: 1000ms;
+}
+.section-menu-plat--4 {
+  animation-delay: 1333.3333333333ms;
+}
+.section-menu-plat--5 {
+  animation-delay: 1666.6666666667ms;
+}
+.section-menu-plat--6 {
+  animation-delay: 2000ms;
+}
+.section-menu-plat--7 {
+  animation-delay: 2333.3333333333ms;
+}
+.section-menu-plat--8 {
+  animation-delay: 2666.6666666667ms;
+}
+.section-menu-plat--9 {
+  animation-delay: 3000ms;
 }
 .section-menu-plat-text {
   display: flex;
@@ -725,8 +773,14 @@ main {
   white-space: nowrap;
   overflow: hidden;
 }
-.section-menu-plat__icon--disable {
-  display: none;
+.section-menu-plat__choice {
+  background-color: #99E2D0;
+  /*margin: -1em -5em -1em 1em;*/
+  width: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
 }
 .section-menu__button {
   padding-bottom: 2.3333333333em;
