@@ -145,42 +145,24 @@
         @include flexbox (column,null,null,em(5));
     }
     &-card__icon {
-        background: black;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        i {
+        position: relative;
+        &--visible {
             font-size: em(25);
+            color: black;
         }
-        /*&:hover {
-            i {
-                background: linear-gradient(#9356DC, #FF79DA);
-                color: transparent;
-                -webkit-background-clip: text;
-                background-clip: text;
-                color: transparent;
-                opacity: 1;
-                transition: opacity 1s;
-            }
-        }*/
-        .fa-solid {
-            display: none!important;
-        }
-        &:hover {
+        &--hidden {
+            @include absolute-position;
             background: linear-gradient($colour-primary, $colour-secondary);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            .fa-regular {
-                display: none;
+            opacity:0;
+            transition: opacity 2s;
+            i {
+                font-size: em(25);
             }
-            .fa-solid {
-                display: inline-block!important;
-                /*animation: fadeIn 0.2s;*/
-            }
+        }
+        &--hidden:hover {
+            opacity:1;
         }
     }
 }
-
-/*@keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
-}*/

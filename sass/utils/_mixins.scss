@@ -43,7 +43,7 @@
     border-bottom: em(3) solid $color;
 }
 
-@mixin pseudo-elem {
+@mixin absolute-position {
     position: absolute;
     top: 0;
     right: 0;

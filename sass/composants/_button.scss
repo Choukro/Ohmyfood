@@ -14,15 +14,5 @@
     &:hover {
         @include box-shadow(0px, 6px, 12px, rgba(0, 0, 0, 0.4));
         @include background-gradient(-10deg,$colour-primary-lighten, 0%, $colour-secondary-lighten, 100%, true);
-        /*&::after {
-            opacity: 1;
-        }*/
     }
-    /*&::after {
-        @include pseudo-elem;
-        @include background-gradient(-10deg,$colour-secondary, 0%, $colour-primary, 100%, true);
-        opacity: 0;
-        z-index: -1;
-        transition: opacity 250ms;
-    }*/
 }

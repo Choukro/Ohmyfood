@@ -619,44 +619,31 @@ h4 {
   gap: 0.3333333333em;
 }
 .section-card__icon {
-  background: black;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /*&:hover {
-      i {
-          background: linear-gradient(#9356DC, #FF79DA);
-          color: transparent;
-          -webkit-background-clip: text;
-          background-clip: text;
-          color: transparent;
-          opacity: 1;
-          transition: opacity 1s;
-      }
-  }*/
+  position: relative;
 }
-.section-card__icon i {
+.section-card__icon--visible {
   font-size: 1.6666666667em;
+  color: black;
 }
-.section-card__icon .fa-solid {
-  display: none !important;
-}
-.section-card__icon:hover {
+.section-card__icon--hidden {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: opacity 2s;
 }
-.section-card__icon:hover .fa-regular {
-  display: none;
+.section-card__icon--hidden i {
+  font-size: 1.6666666667em;
 }
-.section-card__icon:hover .fa-solid {
-  display: inline-block !important;
-  /*animation: fadeIn 0.2s;*/
+.section-card__icon--hidden:hover {
+  opacity: 1;
 }
 
-/*@keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
-}*/
 main {
   background-color: #f6f6f6;
 }
@@ -764,20 +751,10 @@ main {
 .button {
   position: relative;
   z-index: 1;
-  /*&::after {
-      @include pseudo-elem;
-      @include background-gradient(-10deg,$colour-secondary, 0%, $colour-primary, 100%, true);
-      opacity: 0;
-      z-index: -1;
-      transition: opacity 250ms;
-  }*/
 }
 .button:hover {
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
   background: linear-gradient(-10deg, #a16be0 0%, #ff93e1 100%);
-  /*&::after {
-      opacity: 1;
-  }*/
 }
 
 /*# sourceMappingURL=style.css.map */
