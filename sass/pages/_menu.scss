@@ -57,21 +57,15 @@ main {
             @include flexbox(column,null,null,em(5));
             width:100%;
             padding: em(11) em(15);
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
+            @include overflow;
             &__heading {
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                overflow: hidden;
+                @include overflow;
             }
             &__byline {
                 @include flexbox(row, space-between,center,em(5));
             }
             &__byline > div {
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                overflow: hidden;
+                @include overflow;
             }
         }
         &__choice {
@@ -87,7 +81,7 @@ main {
             width: em(22);
             background-color: white;
             color : $colour-tertiary;
-            border-radius: em(100);
+            @include rounded(em(100));
             transform: rotate(0deg);
             transition-duration: 0.5s;
         }
