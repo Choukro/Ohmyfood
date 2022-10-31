@@ -40,7 +40,7 @@ main {
         @include separator();
     }
     &-plat {
-        @include flexbox(row,null,center);
+        @include flexbox(row);
         @include box-shadow(0px, 6px, 12px, rgba(0, 0, 0, 0.2));
         background-color: $colour-background;
         @include rounded (em(15));
@@ -57,8 +57,16 @@ main {
             @include flexbox(column,null,null,em(5));
             width:100%;
             padding: em(11) em(15);
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            &__heading {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
             &__byline {
-                @include flexbox(row, space-between,center);
+                @include flexbox(row, space-between,center,em(5));
             }
             &__byline > div {
                 text-overflow: ellipsis;
@@ -67,19 +75,28 @@ main {
             }
         }
         &__choice {
+            @include flexbox(row,center,center);
             background-color: $colour-tertiary;
-            /*margin: -1em -5em -1em 1em;*/
-            width: 4em;
-            display: flex; 
-            align-items: center;
-            justify-content: center;
+            margin: em(-15) em(-75) em(-15) em(15);
+            width: em(75);
             transition-duration: 0.5s;
         }
-        /*&__icon {
-            &--disable {
-                display: none;
-            }
-        }*/
+        &__icon {
+            @include flexbox(row,center,center);
+            height: em(22);
+            width: em(22);
+            background-color: white;
+            color : $colour-tertiary;
+            border-radius: em(100);
+            transform: rotate(0deg);
+            transition-duration: 0.5s;
+        }
+        &:hover &__choice {
+            margin-right: 0em;
+        }
+        &:hover &__icon {
+            transform: rotate(360deg);
+        }
     }
     &__button {
         padding-bottom: em(35) ;

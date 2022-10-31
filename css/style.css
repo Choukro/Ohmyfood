@@ -1,4 +1,8 @@
 /* ----------  */
+/* font-size  */
+/* ----------  */
+/* colors */
+/* ----------  */
 /* animations */
 @keyframes menu {
   0% {
@@ -712,7 +716,8 @@ main {
 .section-menu-plat {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: unset;
+  align-items: unset;
   gap: unset;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
   background-color: white;
@@ -721,11 +726,6 @@ main {
   margin-right: 2.5%;
   overflow: hidden;
   animation: menu 1000ms both ease-in-out;
-  /*&__icon {
-      &--disable {
-          display: none;
-      }
-  }*/
 }
 .section-menu-plat--1 {
   animation-delay: 333.3333333333ms;
@@ -760,13 +760,21 @@ main {
   gap: 0.3333333333em;
   width: 100%;
   padding: 0.7333333333em 1em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.section-menu-plat-text__heading {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .section-menu-plat-text__byline {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: unset;
+  gap: 0.3333333333em;
 }
 .section-menu-plat-text__byline > div {
   text-overflow: ellipsis;
@@ -774,13 +782,35 @@ main {
   overflow: hidden;
 }
 .section-menu-plat__choice {
-  background-color: #99E2D0;
-  /*margin: -1em -5em -1em 1em;*/
-  width: 4em;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: unset;
+  background-color: #99E2D0;
+  margin: -1em -5em -1em 1em;
+  width: 5em;
   transition-duration: 0.5s;
+}
+.section-menu-plat__icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: unset;
+  height: 1.4666666667em;
+  width: 1.4666666667em;
+  background-color: white;
+  color: #99E2D0;
+  border-radius: 6.6666666667em;
+  transform: rotate(0deg);
+  transition-duration: 0.5s;
+}
+.section-menu-plat:hover .section-menu-plat__choice {
+  margin-right: 0em;
+}
+.section-menu-plat:hover .section-menu-plat__icon {
+  transform: rotate(360deg);
 }
 .section-menu__button {
   padding-bottom: 2.3333333333em;

@@ -1,3 +1,8 @@
+/* ----------  */
+/* font-size  */
+$base-font-size: 15px!default;
+/* ----------  */
+/* colors */
 $colour-primary: #9356DC;
 $colour-primary-lighten:lighten(#9356DC,5);
 $colour-secondary: #FF79DA;
@@ -11,7 +16,6 @@ $colour-icon : #7d7d7d;
 $colour-button-hover : #f5ecfe;
 $colour-background-new :#8ee1cf;
 $colour-police-new:#009173;
-$base-font-size: 15px!default;
 /* ----------  */
 /* animations */ 
 $num-menu : 9;
