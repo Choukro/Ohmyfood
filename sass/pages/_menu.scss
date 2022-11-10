@@ -21,6 +21,10 @@ main {
 .section-title {
     padding:em(20) em(15) 0 em(15);
     @include flexbox(row, space-between, center, em(30));
+    padding-right: 8%;
+    @include tablet-and-desktop {
+        padding-right: 5%;
+    }
     &__heading {
         @include police (0.9,lighter);
     }

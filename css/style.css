@@ -726,6 +726,12 @@ main {
   justify-content: space-between;
   align-items: center;
   gap: 2em;
+  padding-right: 8%;
+}
+@media screen and (min-width: 768px) {
+  .section-title {
+    padding-right: 5%;
+  }
 }
 .section-title__heading {
   font-size: 0.9em;
