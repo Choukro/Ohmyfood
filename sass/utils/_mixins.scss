@@ -68,3 +68,15 @@
         @content;
     }
 }
+
+@mixin desktop-only {
+    @media screen and (min-width: (map-get($breakpoints, tablet) + 1px)) {
+        @content;
+    }
+}
+
+@mixin tablet-and-desktop {
+    @media screen and (min-width: (map-get($breakpoints, mobile) + 1px)) {
+        @content;
+    }
+}

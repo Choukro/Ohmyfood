@@ -33,8 +33,17 @@ main {
     @include flexbox(column,null,null,em(16));
     padding-top: em(20);
     padding-bottom: em(40);
+    @include desktop-only {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    @include desktop-only {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     &__heading {
         padding-left:em(15);
+        width: 100%;
     }
     &__heading::after {
         @include separator();
@@ -52,6 +61,11 @@ main {
             &--#{$i} {
                 animation-delay : $anim-delay * $i;
             }
+        }
+        @include desktop-only {
+            width: 31%;
+            margin-left: 0.5%;
+            margin-right: 0.5%;
         }
         &-text {
             @include flexbox(column,null,null,em(5));

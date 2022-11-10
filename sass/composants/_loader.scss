@@ -13,7 +13,6 @@
         @include flexbox(row,center,center);
         height: em(100);
         width: em(100);
-        /*background-color: $colour-primary;*/
         @include background-gradient(-10deg,$colour-primary, 0%, $colour-secondary, 100%, true);
         color : $colour-tertiary;
         @include box-shadow(0px, 6px, 12px, rgba(0, 0, 0, 0.2));
@@ -28,9 +27,13 @@
         opacity:0;
         margin-top:em(-25);
         @extend %h1;
-        @include police(4,600);
+        /*@include police(4,600);
         @include mobile-only {
             @include police(2.5,600);
+        }*/
+        @include police(2.5,600);
+        @include tablet-and-desktop {
+            @include police(4,600);
         }
         display: inline-block;
         letter-spacing: em(2);
@@ -52,32 +55,7 @@
     }
 } 
 
-@keyframes icon{
-    0% {
-        opacity: 1;
-        transform: scale(0);
-    }
-    100% {
-        opacity: 0;
-        transform: scale(6);
-        }
-    }
-
-@keyframes heading {
-    0% , 20% {
-        opacity: 0;
-        letter-spacing: em(20);
-    }
-    65% , 95% {
-        opacity: 1;
-        letter-spacing: em(1);
-    }
-    95% , 100% {
-        opacity: 0;
-    }
-}
-
-@include mobile-only {
+@include tablet-and-desktop {
     @keyframes icon{
         0% {
             opacity: 1;
@@ -85,13 +63,14 @@
         }
         100% {
             opacity: 0;
-            transform: scale(4);
+            transform: scale(6);
             }
         }
+    
     @keyframes heading {
         0% , 20% {
             opacity: 0;
-            letter-spacing: em(10);
+            letter-spacing: em(20);
         }
         65% , 95% {
             opacity: 1;
@@ -100,5 +79,29 @@
         95% , 100% {
             opacity: 0;
         }
+    }
+}
+
+@keyframes icon{
+    0% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(4);
+        }
+    }
+@keyframes heading {
+    0% , 20% {
+        opacity: 0;
+        letter-spacing: em(10);
+    }
+    65% , 95% {
+        opacity: 1;
+        letter-spacing: em(1);
+    }
+    95% , 100% {
+        opacity: 0;
     }
 }

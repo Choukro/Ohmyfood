@@ -4,9 +4,9 @@
     background-color: $colour-background-section;
     height: 340px;
     &__form {
-        margin-bottom: em(55);
-        @include mobile-only {
-            margin-bottom: em(35);
+        margin-bottom: em(35);
+        @include tablet-and-desktop {
+            margin-bottom: em(55);
         }
         background-color: $colour-background-form;
         @include box-shadow(em(0), em(3), em(4), #D0D0D0, true);
@@ -17,9 +17,9 @@
         padding: 0 em(50);
     }
     &__byline {
-        margin-bottom: em(65);
-        @include mobile-only {
-            margin-bottom: em(45);
+        margin-bottom: em(45);
+        @include tablet-and-desktop {
+            margin-bottom: em(65);
         }
         text-align: center;
         padding: 0 em(20);
@@ -71,14 +71,27 @@
     @include flexbox(column,null,null,1.5em);
     &__heading {
         padding-left: em(15);
-        text-align: center;
-        @include mobile-only {
-            text-align: left;
+        text-align: left;
+        @include tablet-and-desktop{
+            text-align: center;
+        }
+    }
+    &__all-buttons {
+        @include flexbox(column,null,null,1.5em);
+        @include desktop-only {
+            flex-direction: row;
+            margin-left: auto;
+            margin-right: auto;
+            gap:em(0);
+            width: 100%;
         }
     }
     &__button {
         @include flexbox(row,center,center);
         margin-right: em(5);
+        padding-left: em(15);
+        padding-right: em(15);
+        width: 100%;
         span {
             z-index: 1;
             width:em(22);
@@ -94,7 +107,7 @@
             color: $colour-icon;
         }
         button {
-            width:310px;
+            width:100%;
             margin-left: em(-10);
             @include flexbox(row,null,center,1.5em);
             background-color: $colour-background-section;
@@ -113,10 +126,15 @@
     } 
     &-cards {
         @include flexbox(column,null,center,em(18));
+        @include desktop-only {
+            flex-direction: row;
+        }
+        padding-left: em(15);
+        padding-right: em(15);
     }
     &-card {
         height:250px;
-        width:335px;
+        width:100%;
         @include flexbox (column);
         @include rounded (em(15));
         @include box-shadow(0px, 6px, 12px, rgba(0, 0, 0, 0.2));
