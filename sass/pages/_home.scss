@@ -180,6 +180,7 @@
         &--hidden {
             @include absolute-position;
             background: linear-gradient($colour-primary, $colour-secondary);
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             opacity:0;

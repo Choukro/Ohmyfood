@@ -3,19 +3,39 @@ main {
 }
 
 #image-restaurant {
-    max-height : 500px;
+    @include tablet-and-desktop {
+        max-height : 500px;
+    }
     img {
         max-width: 100%;
         object-fit: cover;
+        @include desktop-only {
+            object-position: 0 -150px;
+        }
     }
 }
+
+.image--focus {  
+    max-height : 70vw;
+    img {
+        object-position: 0 -95px;
+        @include tablet-and-desktop {
+            object-position: unset;
+        }
+        @include desktop-only {
+            width:100%;
+            max-height : 600px;
+        }
+    }
+}      
+
 
 #menu-restaurant {
     z-index: 1;
     position:relative;
-    margin-top:em(-25);
+    margin-top:em(-38);
     background-color: $colour-background-section;
-    @include rounded(em(26) em(26) 0 0); 
+    @include rounded(em(38) em(38) 0 0); 
 }
 
 .section-title {
@@ -44,6 +64,7 @@ main {
     @include desktop-only {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
     &__heading {
         padding-left:em(15);

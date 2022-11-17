@@ -5,7 +5,205 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="../css/style.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
         <title>À la française</title>
     </head>
+
+    <body>
+        <header>
+            <div class="header">
+                <div class="header__icon">
+                    <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+                <div class="header__image">
+                        <img srcset="../images/logo/ohmyfood.png 1x,../images/logo/ohmyfood@2x.svg 2x"
+                        src="../images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood">
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div id="image-restaurant">
+                <img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                alt="Restaurant À la française - Cité rouge">
+            </div>
+            <section id="menu-restaurant">
+                <div class="section-title">
+                    <div class="section-title__heading">
+                        <h1>À la française</h1>
+                    </div>
+                    <div class="section-title__icon section-card__icon">
+                        <i class="fa-regular fa-heart section-card__icon--visible"></i>
+                        <div class="section-card__icon--hidden">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <section class="section-menu">
+                    <div class="section-menu__heading">
+                        <h4>entrées</h4>
+                    </div>
+                    <div class="section-menu-plat section-menu-plat--1">
+                        <div class="section-menu-plat-text">
+                            <div class="section-menu-plat-text__heading bloc__heading">Tartare de poulpe acidulé</div>
+                            <div class="section-menu-plat-text__byline">
+                                <div class="bloc__byline">Aux zestes d'orange</div>
+                                <span>25€</span>
+                            </div>
+                        </div>
+                        <div class="section-menu-plat__choice">
+                            <div class="section-menu-plat__icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-menu-plat section-menu-plat--2">
+                        <div class="section-menu-plat-text">
+                            <div class="section-menu-plat-text__heading bloc__heading">Velouté de légumes d'antan</div>
+                            <div class="section-menu-plat-text__byline">
+                                <div class="bloc__byline">Carotte, panais, topinambour</div>
+                                <span>35€</span>
+                            </div>
+                        </div>
+                        <div class="section-menu-plat__choice">
+                            <div class="section-menu-plat__icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-menu-plat section-menu-plat--3">
+                        <div class="section-menu-plat-text">
+                            <div class="section-menu-plat-text__heading bloc__heading">Soupe à l'oignon</div>
+                            <div class="section-menu-plat-text__byline">
+                                <div class="bloc__byline">Revisitée</div>
+                                <span>20€</span>
+                            </div>
+                        </div>
+                        <div class="section-menu-plat__choice">
+                            <div class="section-menu-plat__icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-menu">
+                    <div class="section-menu__heading">
+                        <h4>plats</h4>
+                    </div>
+                    <div class="section-menu-plat section-menu-plat--4">
+                        <div class="section-menu-plat-text">
+                            <div class="section-menu-plat-text__heading bloc__heading">Coquilles Saint-Jacques</div>
+                            <div class="section-menu-plat-text__byline">
+                                <div class="bloc__byline">Accompagnées d'une purée de panais</div>
+                                <span>40€</span>
+                            </div>
+                        </div>
+                        <div class="section-menu-plat__choice">
+                            <div class="section-menu-plat__icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-menu-plat section-menu-plat--5">
+                        <div class="section-menu-plat-text">
+                            <div class="section-menu-plat-text__heading bloc__heading">Magret de canard</div>
+                            <div class="section-menu-plat-text__byline">
+                                <div class="bloc__byline">Et parmentier de pommes de terre</div>
+                                <span>35€</span>
+                            </div>
+                        </div>
+                        <div class="section-menu-plat__choice">
+                            <div class="section-menu-plat__icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-menu-plat section-menu-plat--6">
+                        <div class="section-menu-plat-text">
+                            <div class="section-menu-plat-text__heading bloc__heading">Pigeonneau d’Ille-et-Vilaine</div>
+                            <div class="section-menu-plat-text__byline">
+                                <div class="bloc__byline">Sur son lit de gnocchis aux légumes</div>
+                                <span>44€</span>
+                            </div>
+                        </div>
+                        <div class="section-menu-plat__choice">
+                            <div class="section-menu-plat__icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-menu">
+                    <div class="section-menu__heading">
+                        <h4>desserts</h4>
+                    </div>
+                    <div class="section-menu-plat section-menu-plat--7">
+                        <div class="section-menu-plat-text">
+                            <div class="section-menu-plat-text__heading bloc__heading">Pétales de violettes glacés</div>
+                            <div class="section-menu-plat-text__byline">
+                                <div class="bloc__byline">Et purée de noisettes</div>
+                                <span>18€</span>
+                            </div>
+                        </div>
+                        <div class="section-menu-plat__choice">
+                            <div class="section-menu-plat__icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-menu-plat section-menu-plat--8">
+                        <div class="section-menu-plat-text">
+                            <div class="section-menu-plat-text__heading bloc__heading">Fondant au chocolat</div>
+                            <div class="section-menu-plat-text__byline">
+                                <div class="bloc__byline">Revisité</div>
+                                <span>22€</span>
+                            </div>
+                        </div>
+                        <div class="section-menu-plat__choice">
+                            <div class="section-menu-plat__icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-menu-plat section-menu-plat--9">
+                        <div class="section-menu-plat-text">
+                            <div class="section-menu-plat-text__heading bloc__heading">Millefeuille croustillant</div>
+                            <div class="section-menu-plat-text__byline">
+                                <div class="bloc__byline">Myrtilles et pâte d’amande</div>
+                                <span>23€</span>
+                            </div>
+                        </div>
+                        <div class="section-menu-plat__choice">
+                            <div class="section-menu-plat__icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="section-menu">
+                    <div class="section-menu__button">
+                        <a href="#" class="button">Commander</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="footer__heading">ohmyfood</div>
+                <div class="footer__list">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-utensils"></i>&nbsp;Proposer un restaurant</a></li>
+                        <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
