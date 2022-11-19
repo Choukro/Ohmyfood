@@ -143,7 +143,10 @@
             height : 170px;
             width : 100%;
             object-fit: cover;
-            object-position: right bottom;
+            object-position: 0% 80%;
+            @include tablet-only {
+                object-position: unset;
+            }
             @include rounded (em(15) em(15) 0px 0px);
         }
         span {
