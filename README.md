@@ -1,6 +1,6 @@
-# Booki 🍽️ : Site web pour des restaurants gastronomiques 
+# Booki 🍽️ : Site web pour des restaurants
 
-> 🖥️ **Création d'un site web “mobile first” pour des restaurants gastronomiques à Paris !**
+> 🖥️ **Site web “mobile first” pour des restaurants gastronomiques à Paris !**
 
 ![screenshot du site](./images/screenshot/42795731.png)
 
