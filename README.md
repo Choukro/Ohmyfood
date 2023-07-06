@@ -1,4 +1,4 @@
-# Booki 🍽️ : Site web pour des restaurants
+# Ohmyfood 🍽️ : Site web pour des restaurants
 
 > 🖥️ **Site web “mobile first” pour des restaurants gastronomiques à Paris !**
 
